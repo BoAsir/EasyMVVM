@@ -38,7 +38,6 @@
 		CEBD51BE1FE8EE0E00E755CB /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBD51BD1FE8EE0E00E755CB /* TestModel.m */; };
 		CED1D01F1FA7229300E05DD8 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED1D01E1FA7229300E05DD8 /* Launch Screen.storyboard */; };
 		CED8F0EB200DDFD700550F06 /* StaticTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED8F0EA200DDFD700550F06 /* StaticTableViewController.m */; };
-		CEDF8AE0210B066000707889 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = CEDF8ADF210B065F00707889 /* CHANGELOG.md */; };
 		CEEEFF62200E144800803CBF /* DynamicListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEEFF61200E144800803CBF /* DynamicListViewController.m */; };
 		CEEEFF65200E224E00803CBF /* DynamicListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEEFF64200E224E00803CBF /* DynamicListViewModel.m */; };
 		CEEEFF67200E26F000803CBF /* ERDynamicListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEEFF66200E26F000803CBF /* ERDynamicListTests.swift */; };
@@ -403,7 +402,6 @@
 				22A0EC081FEA5E4F003CB499 /* Frameworks */,
 				22A0EC091FEA5E4F003CB499 /* Resources */,
 				448254D21FEE5351BD7FB448 /* [CP] Embed Pods Frameworks */,
-				D1EEA5CCA8D63C52642055AB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -424,7 +422,6 @@
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				F3B647F46058682B264A5C42 /* [CP] Embed Pods Frameworks */,
-				AC5C93DB3A8EF7617744382A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -444,7 +441,6 @@
 				CEB087211FA6D07A00458A00 /* Frameworks */,
 				CEB087221FA6D07A00458A00 /* Resources */,
 				884A142D699C73EB69DA2E56 /* [CP] Embed Pods Frameworks */,
-				531374F87F2B5FDC5F3FCFD2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -490,6 +486,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -522,7 +519,6 @@
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				CED1D01F1FA7229300E05DD8 /* Launch Screen.storyboard in Resources */,
-				CEDF8AE0210B066000707889 /* CHANGELOG.md in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -572,22 +568,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		531374F87F2B5FDC5F3FCFD2 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyMVVM_ExampleTests/Pods-EasyMVVM_ExampleTests-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		884A142D699C73EB69DA2E56 /* [CP] Embed Pods Frameworks */ = {
@@ -627,7 +608,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A6DB2E2A451BA74181123BED /* [CP] Check Pods Manifest.lock */ = {
@@ -645,37 +626,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		AC5C93DB3A8EF7617744382A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyMVVM_Example/Pods-EasyMVVM_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D1EEA5CCA8D63C52642055AB /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyMVVM_ExampleUITests/Pods-EasyMVVM_ExampleUITests-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F3B647F46058682B264A5C42 /* [CP] Embed Pods Frameworks */ = {
@@ -685,15 +636,21 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-EasyMVVM_Example/Pods-EasyMVVM_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/EasyAction/EasyAction.framework",
+				"${BUILT_PRODUCTS_DIR}/EasyFoundation/EasyFoundation.framework",
 				"${BUILT_PRODUCTS_DIR}/EasyMVVM/EasyMVVM.framework",
 				"${BUILT_PRODUCTS_DIR}/EasyReact/EasyReact.framework",
-				"${BUILT_PRODUCTS_DIR}/ZTuple/ZTuple.framework",
+				"${BUILT_PRODUCTS_DIR}/EasySequence/EasySequence.framework",
+				"${BUILT_PRODUCTS_DIR}/EasyTuple/EasyTuple.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EasyAction.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EasyFoundation.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EasyMVVM.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EasyReact.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZTuple.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EasySequence.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EasyTuple.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
